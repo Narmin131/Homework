@@ -3,15 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #E9EBEE;
+}
 form{
-    background-color: rgb(214, 224, 226);
     width: 380px;
-    height: 310px;
+    height: 360px;
     margin: auto;
     text-align: center;
     margin-top: 120px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
 }
 .first{
     text-decoration: none;
@@ -27,28 +31,28 @@ input{
     width: 90%;
     margin-top: 15px;
     border-radius: 4px;
-    border: none;
+    border: 1.2px solid #ccc;
     font-size: 16px;
 }
 .login{
     color: white;
     background-color: #1877F2;
     width: 90%;
-    padding: 10px;
+    padding: 13px 10px;
     font-size: 18px;
     border: none;
     cursor: pointer;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 13px 0 10px 0;
     border-radius: 4px;
 }
 .create{
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px 10px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
     font-weight: 700;
-    margin-top: 25px;
+    margin-top: 30px;
     background-color:#42b72a;
     color: #fff;  
     width: 60%;
@@ -64,4 +68,10 @@ input{
 }
 hr{
     margin: 0 20px;
+}
+.first:visited{
+   color: #1877F2;
+}
+input:focus{
+   outline: none;
 }
