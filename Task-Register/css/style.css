@@ -66,8 +66,9 @@ input{
     background-color:#36a420;
 
 }
-hr{
-    margin: 0 20px;
+.next{
+    border-top: 1px solid #ccc;
+    
 }
 .first:visited{
    color: #1877F2;

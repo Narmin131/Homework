@@ -8,7 +8,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/create.css">
 </head>
-
 <body>
   <form>
     <div class="first">
@@ -16,10 +15,10 @@
       <p>It's quick and easy</p>
     </div>
     <div class="second">
-      <input type="text" placeholder="Name" class="inpt left">
-      <input type="text" placeholder="Surname" class="inpt right"><br>
-      <input type="text" placeholder="Mobile phone number or email address" class="mobile"><br>
-      <input type="password" placeholder="New password" class="passw"><br>
+      <input type="text" placeholder="Name" class="inpt left" required>
+      <input type="text" placeholder="Surname" class="inpt right" required ><br>
+      <input type="text" placeholder="Mobile phone number or email address" class="mobile" required><br>
+      <input type="password" placeholder="New password" class="passw" required minlength="5" maxlength="10"><br>
     </div>
     <div class="label">
       <p>Date of birth</p>
@@ -30,18 +29,35 @@
         <option value="15">15</option>
         <option value="16">16</option>
         <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
       </select>
       <select id="month" class="opt">
+        <option value="January">Jan</option>
+        <option value="February">Feb</option>
+        <option value="March">Mar</option>
+        <option value="April">Apr</option>
+        <option value="May">May</option>
+        <option value="June">Jun</option>
+        <option value="July">Jul</option>
         <option value="August">Aug</option>
         <option value="September">Sep</option>
         <option value="October">Oct</option>
         <option value="November">Nov</option>
+        <option value="December">Dec</option>
       </select>
       <select id="year" class="opt">
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
         <option value="2018">2018</option>
         <option value="2019">2019</option>
-        <option value="2020">2019</option>
-        <option value="2021">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
       </select>
     </div>
     <div class="label">
@@ -50,15 +66,15 @@
     <div class="third">
       <div class="gndr">
         <label for="Female">Female</label>
-        <input type="radio" name="none">
+        <input type="radio" name="none" required>
       </div>
       <div class="gndr">
         <label for="Male">Male</label>
-        <input type="radio" name="none">
+        <input type="radio" name="none" required>
       </div>
       <div class="gndr">
         <label for="Special">Special</label>
-        <input type="radio" name="none">
+        <input type="radio" name="none" required>
       </div>
     </div>
     <div class="terms">
