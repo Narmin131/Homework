@@ -6,8 +6,8 @@
 .main-bg {
   height: 100vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url("img/img6.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("img/img6.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url("img/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("img/bg.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -173,7 +173,7 @@
 .second {
   width: 100%;
   height: 150vh;
-  background-color: #0a090e;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +186,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .second .left {
@@ -194,9 +195,9 @@
 }
 
 .second .left .left-text {
-  width: 92%;
+  width: 100%;
   height: 90vh;
-  margin-top: 1rem;
+  margin-top: .4rem;
 }
 
 .second .left .left-text h1 {
@@ -212,6 +213,7 @@
   font-size: 4rem;
   text-transform: uppercase;
   color: white;
+  letter-spacing: .8rem;
 }
 
 .second .left .left-text p {
@@ -252,17 +254,91 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: aqua;
 }
 
 .second .right .img {
   width: 90%;
   height: 110vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url("img/feat.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("img/feat.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url("img/right.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("img/right.jpg");
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: rgba(197, 193, 195, 0.4) 5px 5px, rgba(206, 198, 203, 0.3) 10px 10px, rgba(170, 167, 169, 0.2) 15px 15px;
           box-shadow: rgba(197, 193, 195, 0.4) 5px 5px, rgba(206, 198, 203, 0.3) 10px 10px, rgba(170, 167, 169, 0.2) 15px 15px;
+}
+
+.divs {
+  position: absolute;
+  bottom: 17rem;
+  right: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.divs h1 {
+  font-weight: 800;
+  font-size: 4.5rem;
+  margin-bottom: 17px;
+}
+
+.divs h2 {
+  font-weight: 600;
+  margin-right: 20px;
+  font-size: 2.4rem;
+}
+
+.divs p {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.div1 {
+  width: 210px;
+  height: 115px;
+  background-color: white;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.div2 {
+  width: 230px;
+  height: 115px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
