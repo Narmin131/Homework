@@ -3,6 +3,16 @@
   font-family: Poppins, sans-serif;
 }
 
+.sticky-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #05060a;
+  width: 100%;
+}
+
 .main-bg {
   height: 100vh;
   width: 100%;
@@ -16,7 +26,6 @@
 .main-bg header {
   height: 13vh;
   width: 100%;
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +141,7 @@
 
 .main .text .btn1 {
   cursor: pointer;
-  padding: 12px 14px;
+  padding: 16px 22px;
   border: 1px solid white;
   border-radius: 4px;
   color: white;
@@ -190,7 +199,7 @@
 }
 
 .second .left {
-  width: 45%;
+  width: 40%;
   height: 100vh;
 }
 
@@ -226,7 +235,7 @@
 
 .second .left .left-text .btn2 {
   cursor: pointer;
-  padding: 16px 20px;
+  padding: 16px 22px;
   border: 1px solid white;
   border-radius: 4px;
   color: white;

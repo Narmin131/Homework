@@ -2,6 +2,15 @@
     font-size: 10px;
     font-family: Poppins, sans-serif;
 }
+.sticky-nav {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:999;
+    background-color: #05060a;
+    width: 100%;
+}
 .main-bg{
     height: 100vh;
     width: 100%;
@@ -12,9 +21,9 @@
     header{
         height: 13vh;
         width: 100%;
-        background-color:transparent;
         display: flex;
         justify-content: space-between;
+        
         .logo{
             width: 30%;
             display: flex;
@@ -76,7 +85,7 @@
         line-height: 2;
        }.btn1{
          cursor: pointer;
-         padding: 12px 14px;
+         padding:16px 22px;
          border: 1px solid white;
          border-radius: 4px;
          color: white;
@@ -119,7 +128,7 @@
     align-items: center;
     position: relative;
  .left{
-     width: 45%;
+     width: 40%;
      height: 100vh;
 
 .left-text{
@@ -150,7 +159,7 @@
     }
     .btn2{
         cursor: pointer;
-         padding: 16px 20px;
+         padding: 16px 22px;
          border: 1px solid white;
          border-radius: 4px;
          color: white;
