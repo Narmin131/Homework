@@ -394,7 +394,10 @@
 .features .top h1 {
   font-size: 5rem;
   font-weight: 500;
-  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .features .bottom {
@@ -459,8 +462,8 @@
 
 .footer {
   width: 100%;
-  height: 80vh;
-  background-color: darkblue;
+  height: 90vh;
+  background-color: #18191D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,13 +474,272 @@
       justify-content: space-around;
 }
 
-.footer .one {
-  width: 30%;
-  height: 60vh;
-  background-color: white;
+.footer .lft div {
+  margin: 3rem 0;
 }
 
-.footer .one i {
-  font-size: 2.2rem;
+.footer .lft h2 {
+  margin: 2.5rem 0 2.5rem 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.footer .lft i {
+  font-size: 3.5rem;
+  float: left;
+  margin-right: 3rem;
+  margin-left: 2.3rem;
+}
+
+.footer .lft h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 9rem;
+}
+
+.footer .lft p {
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  opacity: .7;
+  margin-left: 9rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.footer .avrg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.footer .avrg h2 {
+  margin: 2.5rem 0 2.5rem 0;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.footer .avrg p {
+  opacity: .7;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding-bottom: 1.1rem;
+  float: left;
+  margin-left: 1rem;
+}
+
+.footer .avrg a {
+  font-size: 1.2rem;
+  color: #12c2e9;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.footer .avrg .img1 {
+  width: 100%;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.footer .avrg .img2 {
+  width: 100%;
+  height: 90px;
+}
+
+.footer .avrg img {
+  float: left;
+}
+
+.footer .avrg input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  margin: auto;
+  outline: none;
+}
+
+.footer .avrg .fa-solid {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  line-height: 4.6rem;
+  font-size: 1.8rem;
+  width: 4.6rem;
+  height: 4.6;
+  background-color: #12c2e9;
+  text-align: center;
+  position: absolute;
+  bottom: 4rem;
+  right: 2.1rem;
+  cursor: pointer;
+}
+
+.rght h2 {
+  margin: 2.5rem 0 2.5rem 0rem;
+  font-size: 3.7rem;
+  font-weight: 500;
+}
+
+.rght .scn-icons {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.rght .scn-icons .fa-brands {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-left: 10px;
+  line-height: 6rem;
+  font-size: 1.4rem;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+}
+
+.rght .scn-icons .fa-brands:hover {
+  border: 1px solid white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.rght p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  opacity: .7;
+  font-family: Poppins, sans-serif;
+  margin-left: 1px;
+  line-height: 2.9rem;
+  letter-spacing: .1rem;
+}
+
+.rght a {
+  font-size: 1.7rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.one {
+  width: 30%;
+  height: 70vh;
+  background-color: #18191D;
+  color: white;
+}
+
+.blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 140vh;
+  background-color: #1B1D21;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 9rem;
+}
+
+.blogs .blog-text {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.blogs .blog-text p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1.1rem;
+  padding: 2rem 0;
+}
+
+.blogs .blog-text h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.blogs .blog12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blogs .blog12 p, .blogs .blog12 a {
+  margin: 10px;
+  font-size: 1.2;
+}
+
+.blogs .blog12 a {
+  color: #12c2e9;
+}
+
+.blogs .blog12 h1, .blogs .blog12 p {
+  color: white;
+}
+
+.blogs .blog12 button {
+  color: white;
+  padding: 13px 17px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.blogs .blog12 button:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: #fff;
+  color: #18191D;
+}
+
+.blogs .blog12 .blog1 {
+  width: 45%;
+  height: 80vh;
+}
+
+.blogs .blog12 .blog2 {
+  width: 45%;
+  height: 80vh;
 }
 /*# sourceMappingURL=style.css.map */
