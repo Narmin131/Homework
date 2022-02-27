@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".main").waypoint(function(direction){
+        if(direction=="down"){
+            $("header").addClass(".fixed-nav");
+        }else{
+            $("header").removeClass(".fixed-nav");
+        }
+    })
+});

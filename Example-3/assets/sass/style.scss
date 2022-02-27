@@ -1,0 +1,406 @@
+// Imports
+@import "reset";
+@import "mixin";
+
+*,body{
+  font-size: 10px;
+  font-family: Fira Sans,sans-serif;
+}
+// ############################################
+//                 Solution
+// ############################################
+.main{
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/img/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  header{
+    width: 100%;
+    height: 16vh;
+    @include around();
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid white;
+      .logo{
+      width: 20%;
+      height: 17vh;
+      @include center();
+      align-items: center;
+      }
+      nav{
+        width: 60%;
+        height: 17vh;
+        @include center();
+        ul{
+          width: 100%;
+          height: 17vh;
+          @include around();
+          align-items: center;
+          li{
+            a{
+              color: white;
+              font-size: 1.1rem;
+            }i{
+              font-size: .7rem;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+  }
+  .container{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    @include center();
+    align-items: center;
+  .main-text{
+    height: 80vh;
+    position: absolute;
+    color: white;
+    flex-direction: column;
+    @include center();
+    align-items: center;
+    h1{ 
+    font-size: 6rem;
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+    }p{
+     opacity: .7;
+     font-size: 1.2rem;
+     line-height: 2.2rem;
+    }button{
+      background-color: #2B4FBD;
+      border-radius: 1.5rem;
+      padding: 15px 60px;
+      font-size: .9rem;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      border:none;
+      margin-top: 1.5rem;
+      transition: all .4s;
+    &:hover{
+      background-color: #0D0E09;
+    }
+  }
+  }
+}}
+
+.fixed-nav{
+  top: 0;
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  background-color: white;
+  color: #2B4FBD;
+  width: 100%;
+}
+// ############################################
+//                 Solution
+// ############################################
+.solution{
+  height: 100vh;
+  width: 100%;
+  @include center();
+  justify-content: center;
+  flex-direction: column;
+  .top{
+     width: 100%;
+     height: 50vh;
+     @include center();
+     flex-direction: column;
+     align-items: center;
+     h1{
+       color: #2B4FBD;
+       font-size: 1.1rem;
+       font-weight: 500;
+       margin-bottom: .7rem;
+       
+     }
+     p{
+       line-height: 2.6rem;
+      font-size: 2rem;
+      font-weight: 700;
+     }
+     .head{
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background: rgb(43, 79, 189);
+      border-radius: 25%;
+      margin-top: 1rem;
+     }
+  }
+.bottom{
+  width: 100%;
+  height: 80vh;
+  @include center();
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  .one{
+    width: 30%;
+    height: 50vh;
+    @include center();
+    flex-direction: column;
+    align-items: center;
+    h1{
+       font-size: 1.4rem;
+       font-weight: 500;
+       margin: 1rem 0;
+    }
+  } p{
+       font-size: 1rem;
+       font-weight: 400;
+       opacity: .8;
+       line-height: 1.6rem;
+       text-align: center;
+  }
+    i{
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      font-size: 2.5rem;
+      line-height: 8rem;
+      text-align: center;
+      background-image: linear-gradient(to bottom, rgba(43, 79, 189, .1), transparent);
+      color: #2B4FBD;
+      margin-bottom: 2rem;
+
+    }
+}
+}
+// ############################################
+//                  Contact
+// ############################################
+.contact{
+  width: 100%;
+  height: 25vh;
+  background-color: #2B4FBD;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  h1{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+  }
+  button{
+    background-color:#000000;
+    border-radius: 1.5rem;
+    padding: 15px 60px;
+    font-size: .9rem;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border:none;
+    transition: all .4s;
+    &:hover{
+      background-color: #2B4FBD;
+    }
+  }
+}
+
+// ############################################
+//                  Services
+// ############################################
+.services{
+  background-image: url("/assets/img/map-shape.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  @include center();
+    flex-direction: column;
+    align-items: center;
+  .service-box{
+    height: 300px;
+    width: 80%;
+    @include center();
+    flex-direction: column;
+    align-items: center;
+    button{
+      background-color: #2B4FBD;
+      border-radius: 1.8rem;
+      padding: 20px 40px;
+      font-size: .9rem;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      border:none;
+      margin-top: 1.5rem;
+      transition: all .4s;
+    &:hover{
+      background-color: #0D0E09;
+    }
+  }h1{ 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    }
+  }p{
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+}
+
+// ############################################
+//                  Communication
+// ############################################
+.communication{
+width: 100%;
+height: 90vh;
+display:flex;
+flex-direction: row;
+justify-content: flex-end;
+background-color: #111111;
+  .left-text{
+width: 47%;
+height: 90vh;
+@include center();
+flex-direction: column;
+.text{
+width: 90%;
+height: 74%;
+color: #fff;
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 3rem;
+}
+p{
+  opacity: .6;
+  font-size: .9rem;
+  line-height: 1.6rem;
+}
+button{
+  background-color: #2B4FBD;
+  border-radius: 1.5rem;
+  padding: 15px 30px;
+  font-size: .9rem;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border:none;
+  margin-top: 1.5rem;
+  transition: all .4s;
+&:hover{
+  background-color: #0D0E09;
+}
+}
+}
+  }.right-img{
+ width: 49%;
+height: 90vh;
+background-image: url("/assets/img/home-10.jpg");
+background-position: left;
+background-size: cover;
+  }
+}
+
+// ############################################
+//                 Strategy Development
+// ############################################
+.development{
+  width: 100%;
+  height: 96vh;
+  @include center();
+  align-items: center;
+  .all{
+    width: 90%;
+    height: 80%;
+    @include center();
+    flex-direction: row;
+    align-items: center;
+    .dataset{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+  .text1{
+    width: 100%;
+    height: 100%;
+   flex-direction: column;
+   h1{
+    font-size: 2.1rem;
+     color: black;
+     font-weight: 700;
+     margin-bottom: 2rem;
+   }
+   p{
+     color: #2B4FBD;
+     font-size: 1.2rem;
+     font-weight: 500;
+     margin-bottom: .9rem;
+   }
+   .head{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: rgb(43, 79, 189);
+    border-radius: 25%;
+   }
+    }
+  }
+  }.questions{
+    width: 80%;
+    height: 100%;
+    @include center();
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8rem;
+    h1{
+      border-bottom: 1px solid #ccc;
+      padding: 1.5rem;
+      font-size: .9rem;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      i{
+        position: absolute;
+        right: 30px;
+      }
+    }
+  }
+}
+
+// ############################################
+//                 Partners
+// ############################################
+
+.partners{
+  background-color:#F9F9F9;
+  width: 100%;
+  height: 25vh;
+  @include center();
+  align-items: center;
+  .partner-items{
+    width: 85%;
+    height: 60%;
+    @include between();
+    flex-direction: row;
+    opacity: .5;
+  }
+}
+
+// ############################################
+//                 LSales box
+// ############################################
+
+
+
+// ############################################
+//                 Footer
+// ############################################
