@@ -64,7 +64,7 @@ a {
 .main {
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/img/slide1.jpg");
+  background-image: url("../img/slide1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -376,7 +376,7 @@ a {
 }
 
 .services {
-  background-image: url("/assets/img/map-shape.png");
+  background-image: url("../img/map-shape.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -514,7 +514,7 @@ a {
 .communication .right-img {
   width: 49%;
   height: 90vh;
-  background-image: url("/assets/img/home-10.jpg");
+  background-image: url("../img/home-10.jpg");
   background-position: left;
   background-size: cover;
 }
