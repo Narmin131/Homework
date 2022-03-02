@@ -5,8 +5,6 @@ $(document).ready(function() {
 
     if ($(window).scrollTop() > 50) {
       $('header').addClass('fixed-nav');
-      // $('.blue').css('color',"black");
-      // $('.imglogo').css('src',"././assets/img/logo.png");
     }
 
     if ($(window).scrollTop() < 51) {
