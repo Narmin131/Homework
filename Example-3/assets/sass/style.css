@@ -85,7 +85,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid white;
 }
 
 .main header .logo {
@@ -129,6 +128,12 @@ a {
 .main header nav ul li a {
   color: white;
   font-size: 1.1rem;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.main header nav ul li a:hover {
+  opacity: .8;
 }
 
 .main header nav ul li i {
@@ -204,9 +209,10 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 366;
+  z-index: 364336;
   width: 100%;
-  background-color: #F7F7F7;
+  background-color: #2B4FBD;
+  border-bottom: none;
 }
 
 .solution {
@@ -598,28 +604,38 @@ a {
   border-radius: 25%;
 }
 
-.development .questions {
-  width: 80%;
-  height: 100%;
+.development .rightall {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-top: 8rem;
 }
 
-.development .questions h1 {
+.development .rightall .faq {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.development .question {
   border-bottom: 1px solid #ccc;
+}
+
+.development .question h1 {
   padding: 1.5rem;
   font-size: .9rem;
   font-weight: bold;
@@ -627,15 +643,46 @@ a {
   position: relative;
 }
 
-.development .questions h1 i {
+.development .question h1 i {
   position: absolute;
   right: 30px;
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+  font-size: 1.2rem;
+}
+
+.development .answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .7s ease-out;
+  transition: max-height .7s ease-out;
+  margin-top: 1rem;
+}
+
+.development .answer p {
+  font-size: .9rem;
+  opacity: .6;
+  font-weight: 500;
+  padding-left: 1.4rem;
+  line-height: 1.6;
+}
+
+.development .faq.active .answer {
+  max-height: 300px;
+}
+
+.development .faq.active i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #2B4FBD;
 }
 
 .partners {
   background-color: #F9F9F9;
   width: 100%;
-  height: 25vh;
+  height: 27vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,7 +957,7 @@ a {
 
 footer {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   background-color: #111111;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1164,5 +1211,65 @@ footer .bottom-text .bttext h1 a {
 
 .btns .buttons button:hover {
   background-color: #2B4FBD;
+}
+
+.li {
+  position: relative;
+}
+
+.li .ul {
+  position: absolute;
+  top: 3.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 150px;
+  height: 130px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: mymove;
+          animation-name: mymove;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+}
+
+.li .ul li {
+  font-size: .8rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 15px 5px;
+  color: #333;
+}
+
+.li:hover .ul {
+  display: block;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    top: 14px;
+  }
+  to {
+    bottom: 1px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    top: 14px;
+  }
+  to {
+    bottom: 1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
