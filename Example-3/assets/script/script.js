@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".main").waypoint(function(direction){
+    $(".solution").waypoint(function(direction){
         if(direction=="down"){
             $("header").addClass(".fixed-nav");
         }else{
