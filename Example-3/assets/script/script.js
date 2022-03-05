@@ -3,11 +3,11 @@ $(document).ready(function() {
   $(window).scroll(function () { 
     console.log($(window).scrollTop());
 
-    if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 550) {
       $('header').addClass('fixed-nav');
     }
 
-    if ($(window).scrollTop() < 51) {
+    if ($(window).scrollTop() < 551) {
       $('header').removeClass('fixed-nav');
     }
   });
