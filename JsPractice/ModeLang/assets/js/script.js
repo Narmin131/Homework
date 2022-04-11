@@ -1,26 +1,45 @@
-const ChangeMode = document.querySelector('.btn');
+// ######################################
+// Change theme
+// ######################################
 
+const ChangeMode = document.querySelector('.btn'); var img1 =  document.querySelector(".logo1");
 const myFunc = () => {
     document.body.classList.toggle('dark-theme');
-    document.querySelector('.img2').src= "dark.png";
-    document.querySelector('.logo1').src= "assets/img/logo-dark.png";
-    document.querySelector('.slider').style.backgroundImage= "url(assets/img/bg6.jpg)";
+// var img2 =  document.querySelector(".slider").style.backgroundImage;
+//     if(img1.src.match("assets/img/logo1.png")){
+//         img1.src = "assets/img/logo-dark.png";
+//     }
+//     else{
+//     img1.src = "assets/img/logo1.png";
+//  } 
+
+//     if(img2.match("url(assets/img/bg6.jpg)")){
+//       img2 = "url(assets/img/bg2.jpg)";
+//    }
+//   else{
+//     img2 = "url(assets/img/bg6.jpg)";
+//    } 
 }
 ChangeMode.addEventListener('click',myFunc);
 
-
-// const ChangeMode = document.querySelector('.btn');
-// const myFunc = () => {
-//     document.body.classList.toggle('dark-theme');
-//     if ( document.querySelector(".img2").src == "assets/img/illustration_woman.png") { 
-//         document.querySelector(".img2").src = "dark.png";
+// ######################################
+// const deyis = document.querySelector('.old');
+// const CangePic = () => {
+//     var img1 =  document.querySelector(".logoone");
+//     if ( img1.src.match("assets/img/logo.png")) { 
+//       img1.src = "assets/img/logo-dark.png";
 //     }
-//     else if(document.querySelector(".img2").src = "dark.png"){
-//         document.querySelector(".img2").src = "assets/img/illustration_woman.png";
+//     else{
+//         img1.src = "assets/img/logo.png";
+    
 //     }
 // }
-// ChangeMode.addEventListener('click',myFunc);
+// deyis.addEventListener('click',CangePic);
 
+
+// ######################################
+// Change language
+// ######################################
 
 const langen={
     item1: "Web Design",
@@ -65,6 +84,10 @@ btnaz.addEventListener('click',Func1);
 btneng.addEventListener('click',Func2);
 
 
+
+// ######################################
+// Right menu
+// ######################################
 
 
 const hambgbtn = document.querySelector(".hamb");

@@ -171,7 +171,6 @@ header .buttons .spans {
 }
 
 .slider {
-  background-color: var(--bg);
   height: 115vh;
   width: 100%;
   background-image: url("../img/shape_leftmiddle.png");
