@@ -2,7 +2,7 @@
 // Change theme
 // ######################################
 
-const ChangeMode = document.querySelector('.btn'); var img1 =  document.querySelector(".logo1");
+const ChangeMode = document.querySelector('.btn2'); var img1 =  document.querySelector(".logo1");
 const myFunc = () => {
     document.body.classList.toggle('dark-theme');
 // var img2 =  document.querySelector(".slider").style.backgroundImage;
@@ -91,10 +91,18 @@ btneng.addEventListener('click',Func2);
 
 
 const hambgbtn = document.querySelector(".hamb");
+const closeMenu = document.querySelector(".close");
 const menu = document.querySelector(".menuleft");
 const MenuFunc = () =>{
-   menu.style.transform =  'translateX(100px)';
+   menu.style.transform =  'translateX(0)';
    menu.style.position =  'fixed';
 }
 
 hambgbtn.addEventListener('click',MenuFunc);
+
+
+const CloseMenu = () => {
+    menu.style.transform =  'translateX(500px)';
+    menu.style.position =  'fixed';
+}
+closeMenu.addEventListener('click',CloseMenu);
