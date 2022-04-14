@@ -1,4 +1,5 @@
 @import "variables";
+@import "media";
 *{
     margin: 0;
     padding: 0;
@@ -416,40 +417,67 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom:3rem;
+        padding: 10px;
        .alt-img{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
-        overflow: hidden;
-        img{
-            transition: all .3s ease; 
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: var(--main);
+            content: "";
+            opacity: 0;
+            visibility: hidden;
+            transform-origin: top left;
+            transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+            transform: scaleY(0);
+            z-index: 1;
         }
-        &:hover .empty{
-           transform: scaleY(1);
-          visibility: visible;
-          opacity: .7;
+        & i {
+            position: absolute;
+            font-size: 40px;
+            color: #fff;
+            background-color: var(--iconbg);
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+            visibility: hidden;
+            opacity: 0;
+            transform-origin: top;
         }
-        &:hover img{
-           transform: scale(1.1);
+    
+        &:hover {
+            &:before {
+                opacity: 0.5;
+                visibility: visible;
+                transform: scaleY(1);
+            }
+    
+            & i {
+                visibility: visible;
+                opacity: 1;
+                z-index: 9999;
+            }
         }
        }
     }
-    .empty{
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        z-index: 0;
-        background-color: var(--main);
-        opacity: 0;
-        visibility: hidden;
-        height:100%;
-         transform-origin: top left;
-         transition: all 0.5s ease;
-         transform: scaleY(0);
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-    }
+   
+}
+
+
+.mystyle{
+    background-color: #121315;
 }

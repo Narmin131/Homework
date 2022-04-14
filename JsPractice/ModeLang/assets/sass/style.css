@@ -1,3 +1,63 @@
+@media (max-width: 575.98px) {
+  .slider {
+    height: auto !important;
+  }
+  .solution {
+    height: auto !important;
+  }
+  .about {
+    height: auto !important;
+  }
+  .projects {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slider {
+    height: auto !important;
+  }
+  .solution {
+    height: auto !important;
+  }
+  .about {
+    height: auto !important;
+  }
+  .projects {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .slider {
+    height: auto !important;
+  }
+  .solution {
+    height: auto !important;
+  }
+  .about {
+    height: auto !important;
+  }
+  .projects {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .slider {
+    height: auto !important;
+  }
+  .solution {
+    height: auto !important;
+  }
+  .about {
+    height: auto !important;
+  }
+  .projects {
+    height: auto !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -531,48 +591,11 @@ header .buttons .spans {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  padding: 10px;
 }
 
 .projects .item .alt-img {
   position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.projects .item .alt-img img {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.projects .item .alt-img:hover .empty {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  visibility: visible;
-  opacity: .7;
-}
-
-.projects .item .alt-img:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.projects .empty {
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 0;
-  background-color: var(--main);
-  opacity: 0;
-  visibility: hidden;
-  height: 100%;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,5 +609,72 @@ header .buttons .spans {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+.projects .item .alt-img:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main);
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  z-index: 1;
+}
+
+.projects .item .alt-img i {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  background-color: var(--iconbg);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.projects .item .alt-img:hover:before {
+  opacity: 0.5;
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.projects .item .alt-img:hover i {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.mystyle {
+  background-color: #121315;
 }
 /*# sourceMappingURL=style.css.map */
