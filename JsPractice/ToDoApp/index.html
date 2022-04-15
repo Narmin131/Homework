@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDO App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/sass/style.css">
+
 </head>
 <body>
-     
     <div class="toDoApp">
-        
+      <div class="header"> 
+         <h1>ToDo App</h1>
+        <input type="text" class="ToDoInput" placeholder="Add your new todo...">
+        <i class="fa-solid fa-plus btn-todo"></i>
+      </div>
+      <ul class="myUl">
+          <li class="todo-li">Buy a new gaming laptop<i class="fa-solid fa-trash delete"></i></li>
+          <li class="todo-li">Complete a previous task<i class="fa-solid fa-trash delete "></i></li>
+          <li class="todo-li">Create video for youtube<i class="fa-solid fa-trash delete"></i></li>
+          <li class="todo-li">Create new portfolio site<i class="fa-solid fa-trash delete"></i></li>
+          <li class="todo-li">Read a new book<i class="fa-solid fa-trash delete"></i></li>    
+      </ul>
+  <button class="deleteAll" type="button">Delete all items</button>
     </div>
 
 
+
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

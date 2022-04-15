@@ -4,10 +4,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 body {
-  background-color: darkslategrey;
+  background-color: #687da2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,11 +23,140 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
 }
 
 .toDoApp {
-  width: 400px;
-  height: 400px;
-  background-color: darkgray;
+  width: 600px;
+  height: auto;
+  background-color: #fff;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.toDoApp h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.toDoApp .header {
+  width: 90%;
+  height: 30%;
+  margin-bottom: 20px;
+}
+
+.toDoApp .header .ToDoInput {
+  width: 84%;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.toDoApp .header .btn-todo {
+  width: 13%;
+  background-color: #8D4AE9;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 3px;
+}
+
+.toDoApp .header .btn-todo:hover {
+  background-color: #6b2bc5;
+}
+
+.toDoApp .myUl {
+  width: 90%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.toDoApp .myUl .todo-li {
+  position: relative;
+  background-color: #ccc;
+  list-style-type: none;
+  border-radius: 3px;
+  padding: 14px 10px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.toDoApp .myUl .todo-li:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toDoApp .myUl .todo-li .delete {
+  position: absolute;
+  right: 0;
+  height: 47px;
+  top: 0;
+  width: 47px;
+  line-height: 47px;
+  text-align: center;
+  background-color: #E74D3D;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+}
+
+.toDoApp .myUl .todo-li .delete:hover {
+  background-color: #a32f22;
+}
+
+.toDoApp .deleteAll {
+  width: 40%;
+  background-color: #E74D3D;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-weight: 700;
+  bottom: 0;
+  position: absolute;
+}
+
+.toDoApp .deleteAll:hover {
+  background-color: #a32f22;
+}
+
+.toggle {
+  font-style: italic;
+  background-color: #333333 !important;
+  color: white;
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=style.css.map */
