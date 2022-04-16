@@ -3,7 +3,6 @@ const addBtn = document.querySelector(".btn-todo");
 const deleteAllBtn = document.querySelector(".deleteAll");
 const deletebtn = document.querySelectorAll(".delete");
 const ul = document.querySelector(".myUl");
-const liItem = document.querySelectorAll(".todo-li");
 const toDoApp = document.querySelector(".toDoApp");
 
 
@@ -13,11 +12,13 @@ const ToDoApp = () =>{
     if(input.value === ""){
         alert("Please add new item..");
     }
-    
+    else{
+     // Create li
     const li = document.createElement("li");
     li.innerHTML = input.value;
     li.className = "todo-li";
 
+    // Create i
     const i = document.createElement("i");
     i.classList = "fa-solid fa-trash delete";
 
@@ -25,21 +26,24 @@ const ToDoApp = () =>{
     ul.appendChild(li);
 
     input.value = "";
-    
+    }
+
 }
 addBtn.addEventListener("click",ToDoApp);
 
 
-// Delete item
-var i;
-for (i = 0; i < deletebtn.length; i++) {
-  deletebtn[i].onclick = function() {
-    alert("Are you sure?")
-    //  this.parentElement.remove();
-    // const div = this.parentElement;
-    // div.style.display = "none"
+//Delete item
+function DeleteItem(e){
+  const item = e.target;
+  if(item.className === "fa-solid fa-trash delete"){
+      const itemParent = item.parentElement;
+      itemParent.remove();
   }
+  e.prevenDefault();
 }
+
+ul.addEventListener('click',DeleteItem);
+
 
 // Delete all items
 function DeleteAllItems(){
@@ -48,11 +52,20 @@ function DeleteAllItems(){
 deleteAllBtn.addEventListener("click",DeleteAllItems);
 
 
-//Line through
-// var a;
-// for (a = 0; a < liItem.length; a++) {
-//   liItem[a].onclick = function() {
-//      this.classList.toggle("toggle");
-     
-//   }
-// }
+
+// Checked style
+function ChangeStyle(a){
+  const item2 = a.target;
+  if(item2.className === "todo-li"){
+     item2.classList.add("toggle");
+  }
+  else{
+    item2.classList.remove("toggle");
+  }
+  e.prevenDefault();
+}
+
+ul.addEventListener('dblclick',ChangeStyle);
+
+
+

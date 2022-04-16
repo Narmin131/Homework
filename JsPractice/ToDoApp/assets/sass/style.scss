@@ -6,73 +6,74 @@
     transition: all .3s;
 }
 body{
-    background-color:rgb(104, 125, 162);
+    background-color:#6a81a4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;;
     height: 100vh;
 }
 .toDoApp{
      width: 600px;
-     height: auto;
+     height: 150px;
      background-color: #fff;
-     padding: 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     position: relative;
-
+     padding: 20px 40px;
+     margin-bottom: 20px;
        h1{
-         font-size: 25px;
-         margin-bottom: 20px;
-         margin-top: 10px;
+         font-size: 30px;
+         font-weight: bold;
      }
-     .header{
-         width: 90%; 
-         height: 30%;
-         margin-bottom: 20px;
-
     .ToDoInput{
-         width: 84%;
+         width: 450px;
+         height: 43px;
          outline: none;
          border: 1px solid #ccc;
          font-size: 16px;
          padding: 10px 14px;
          border-radius: 3px;
-         margin-bottom: 10px;
+         margin-top: 15px;
+         font-weight:bold;
      }
      .btn-todo{
-         width: 13%;
-         background-color: #8D4AE9;
+         width: 48px;
+         background-color: #3E497A;
          color: #fff;
          text-align: center;
-         line-height: 40px;
-         height: 40px;
+         line-height: 43px;
+         height: 43px;
          cursor: pointer;
-         transition: all .3s;
          border-radius: 3px;
          &:hover{
-            background-color: #6b2bc5;
+            background-color: #333C83;
         }
-     }
- }
-     .myUl{
-         width: 90%;
+     } 
+    
+}
+  .myUl{
+         width: 600px;
          height: auto;
-        margin-bottom: 40px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: #333C83;
+         padding: 30px 20px;
+         overflow-y:auto;
+         
          .todo-li{
               position: relative;
-              background-color: #ccc;
               list-style-type: none;
               border-radius: 3px;
-              padding: 14px 10px;
+              background-color: #fff;
               font-size: 17px;
+              width: 100%;
+              padding: 0 20px ;
+              height: 47px;
+              line-height: 47px;
               margin-bottom: 15px;
               font-weight: 700;
-              cursor: pointer;
+              user-select: none;
               &:hover i{
                 opacity: 1;
                 visibility: visible;
@@ -98,32 +99,37 @@ body{
               }
           }
      }
-     .deleteAll{
-        width: 40%;
-        background-color: #E74D3D;
-        color: #fff;
-        text-align: center;
-        cursor: pointer;
-        padding:12px;
-        font-size: 15px;
-        border-radius: 3px;
-        outline: none;
-        border: none;
-        transition: all .3s ease;
-        font-weight: 700;
-        bottom: 0;
-        position: absolute;
-        &:hover{
-            background-color: #a32f22;
-        }
-     }
-    
-}
-
-
 .toggle{
     font-style: italic;
-    background-color: #333333 !important;
+    background-color: #1A1A40!important;
     color: white;
+    font-weight:400 !important ;
     text-decoration: line-through;
 }
+
+
+.button-div{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .deleteAll{
+    width: 40%;
+    background-color: #E74D3D;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding:12px;
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    &:hover{
+        background-color: #a32f22;
+    }
+ }
+}
+
