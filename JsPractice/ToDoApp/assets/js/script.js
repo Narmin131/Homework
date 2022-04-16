@@ -68,4 +68,11 @@ function ChangeStyle(a){
 ul.addEventListener('dblclick',ChangeStyle);
 
 
-
+// Enter key activated
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    addBtn.click();
+    event.preventDefault();
+    
+  }
+});

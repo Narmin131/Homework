@@ -69,7 +69,6 @@ body {
 
 .myUl {
   width: 600px;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,8 +83,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #333C83;
-  padding: 30px 20px;
-  overflow-y: auto;
+  padding: 20px;
+  overflow: auto;
+  display: inline-block;
 }
 
 .myUl .todo-li {
