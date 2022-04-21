@@ -1,0 +1,97 @@
+
+:root{
+    --black:#000;
+    --white:#fff;
+}
+.darkmode{
+    --black:#fff;
+    --white:#000;
+}
+header{
+    background-color:var(--white);
+    height: 18vh;
+   
+    .logo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .nav-link{
+        width: 100%;
+        height: 100%;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                a{
+                    text-decoration: none;
+                    color:var(--black) ;
+                    font-size: 1.2rem;
+                    font-family:monospace;
+                    text-transform: uppercase;
+                }
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    .text{
+        width: 70%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        p{
+           color: var(--black);
+           font-size: 6rem;
+           text-transform: uppercase;
+        }
+        h1{
+            color: var(--black);
+            font-size: 4rem;
+        }
+        .buttons{
+            margin-top: 2rem;
+            button{
+                outline: none;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                color: var(--black);
+                background-color: var(--white);
+                border: 1px solid var(--black);
+                margin-right: 1rem;
+                transition: all .3s ease;
+                &:hover{
+                    color: var(--white);
+                    background-color: var(--black);
+
+                }
+            }
+        }
+    }
+    .image{
+        width: 100%;
+        height: 80%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

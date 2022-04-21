@@ -1,0 +1,134 @@
+:root {
+  --black:#000;
+  --white:#fff;
+}
+
+.darkmode {
+  --black:#fff;
+  --white:#000;
+}
+
+header {
+  background-color: var(--white);
+  height: 18vh;
+}
+
+header .logo {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header .nav-link {
+  width: 100%;
+  height: 100%;
+}
+
+header .nav-link ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-link ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+header .nav-link ul li i {
+  font-size: 1.5rem;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+}
+
+.hero .text {
+  width: 70%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero .text p {
+  color: var(--black);
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.hero .text h1 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.hero .text .buttons {
+  margin-top: 2rem;
+}
+
+.hero .text .buttons button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  margin-right: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.hero .text .buttons button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.hero .image {
+  width: 100%;
+  height: 80%;
+}
+
+.hero .image img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
