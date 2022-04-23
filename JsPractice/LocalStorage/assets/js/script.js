@@ -50,7 +50,6 @@
 // const bodyElement = document.querySelector('body');
 // const darkMode = () => {
 //     bodyElement.classList.toggle('dark')
-//     // document.getElementsByClassName('change-img').src = 'assets/img/logo.png';
 // }
 
 // Btn.addEventListener('click', () => {
@@ -132,9 +131,10 @@ Btn.addEventListener('click', ()=> {
 const btnleft = document.querySelector(".btn-left");
 const btnright = document.querySelector(".btn-right");
 const img = document.querySelector('.change-img');
-
 const ChangeImg = () =>{
      img.src = "assets/img/4.jpg" ;
+    // localStorage.getItem('img') = "assets/img/4.jpg" ;
+  
 }
 
 btnright.addEventListener('click',ChangeImg);
@@ -189,47 +189,80 @@ btnleft.addEventListener('click',BackImg);
 
 // Change Language
 
-const az = document.querySelector('.az');
-const en = document.querySelector('.en');
-const navLink = document.querySelectorAll('.navlink');
-const project = document.querySelector('.project');
-const langEn = {
-    item1:'Main',
-    item2:'Gallery',
-    item3:'Projects',
-    item4:'Certifications',
-    item5:'Contacts',
-    item6:'Project'
-}
-const langAz = {
-    item1:'Əsas',
-    item2:'Qalereya',
-    item3:'Layihələr',
-    item4:'Sertifikatlar',
-    item5:'Əlaqələr',
-    item6:'Proyekt'
+// const az = document.querySelector('.az');
+// const en = document.querySelector('.en');
+// const navLink = document.querySelectorAll('.navlink');
+// const project = document.querySelector('.project');
+// const langEn = {
+//     item1:'Main',
+//     item2:'Gallery',
+//     item3:'Projects',
+//     item4:'Certifications',
+//     item5:'Contacts',
+//     item6:'Project'
+// }
+// const langAz = {
+//     item1:'Əsas',
+//     item2:'Qalereya',
+//     item3:'Layihələr',
+//     item4:'Sertifikatlar',
+//     item5:'Əlaqələr',
+//     item6:'Proyekt'
+// }
+
+// const AzLangFunc = () =>{
+//      navLink[0].innerHTML=langAz.item1;
+//      navLink[1].innerHTML=langAz.item2;
+//      navLink[2].innerHTML=langAz.item3;
+//      navLink[3].innerHTML=langAz.item4;
+//      navLink[4].innerHTML=langAz.item5;
+//      project.innerHTML = langAz.item6;
+//    
+    
+// }   
+// const EnLangFunc = () =>{
+//     navLink[0].innerHTML=langEn.item1;
+//     navLink[1].innerHTML=langEn.item2;
+//     navLink[2].innerHTML=langEn.item3;
+//     navLink[3].innerHTML=langEn.item4;
+//     navLink[4].innerHTML=langEn.item5;
+//     project.innerHTML = langEn.item6;
+//
+// }
+// az.addEventListener('click',AzLangFunc);
+// en.addEventListener('click',EnLangFunc);
+
+
+
+
+const langBtn = document.querySelector('.lang');
+
+const az = ['Ana Səhifə','Haqqımızda','Məhsullar','Əlaqə','Bloq'];
+const en = ['Home','About','Product','Contact','Blog'];
+const link = document.querySelectorAll('a');
+const multiLang =()=>{
+    if (langBtn.innerHTML == "az") {
+        for(let x = 0; x<az.length;x++){
+            link[x].innerHTML = az[x];
+        }
+        localStorage.setItem('lang',az);
+        localStorage.setItem('langBtn','en');
+
+        langBtn.innerHTML = "en";
+    }else{
+        for(let x = 0; x<en.length;x++){
+            link[x].innerHTML = en[x];
+        }
+        localStorage.setItem('lang',en);
+        localStorage.setItem('langBtn','az');
+        langBtn.innerHTML = "az";
+
+
+    }
 }
 
-const AzLangFunc = () =>{
-     navLink[0].innerHTML=langAz.item1;
-     navLink[1].innerHTML=langAz.item2;
-     navLink[2].innerHTML=langAz.item3;
-     navLink[3].innerHTML=langAz.item4;
-     navLink[4].innerHTML=langAz.item5;
-     project.innerHTML = langAz.item6;
-    
-    
-}   
-const EnLangFunc = () =>{
-    navLink[0].innerHTML=langEn.item1;
-    navLink[1].innerHTML=langEn.item2;
-    navLink[2].innerHTML=langEn.item3;
-    navLink[3].innerHTML=langEn.item4;
-    navLink[4].innerHTML=langEn.item5;
-    project.innerHTML = langEn.item6;
-    localStorage.setItem('lang',en);
+langBtn.innerHTML = localStorage.getItem('langBtn');
+for(let x = 0; x<en.length;x++){
+    link[x].innerHTML = localStorage.getItem('lang').split(',')[x];
 }
-  
-
-az.addEventListener('click',AzLangFunc);
-en.addEventListener('click',EnLangFunc);
+langBtn.addEventListener('click',multiLang);

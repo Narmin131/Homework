@@ -1,4 +1,4 @@
-
+@import 'media';
 // :root{
 //     --black:#000;
 //     --white:#fff;
@@ -7,10 +7,6 @@
 //     --black:#fff;
 //     --white:#000;
 // }
-
-.dark1{
-    opacity: 0.2;
-}
 
 html[data-theme='light']{  
     --black:#000;
