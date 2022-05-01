@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body {
+  background-color: #417D7A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+}
+
+.toDoApp {
+  width: 600px;
+  height: 150px;
+  background-color: #fff;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.toDoApp h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.toDoApp .ToDoInput {
+  width: 450px;
+  height: 43px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.toDoApp .btn-todo {
+  width: 48px;
+  background-color: #1A3C40;
+  color: #fff;
+  text-align: center;
+  line-height: 43px;
+  height: 43px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.toDoApp .btn-todo:hover {
+  background-color: #2a4d51;
+}
+
+.myUl {
+  height: auto;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1A3C40;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: inline-block;
+}
+
+.myUl .todo-li {
+  position: relative;
+  list-style-type: none;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 17px;
+  width: 80%;
+  padding: 0 20px;
+  height: 47px;
+  margin: 15px auto;
+  line-height: 47px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.myUl .todo-li:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.myUl .todo-li .delete {
+  position: absolute;
+  right: 0;
+  height: 47px;
+  top: 0;
+  width: 47px;
+  line-height: 47px;
+  text-align: center;
+  background-color: #FCD900;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+}
+
+.myUl .todo-li .delete:hover {
+  background-color: #8a863f;
+}
+
+.toggle {
+  font-style: italic;
+  background-color: #1A1A40 !important;
+  color: white;
+  font-weight: 400 !important;
+  text-decoration: line-through;
+}
+
+.button-div {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.button-div .deleteAll {
+  width: 40%;
+  background-color: #dec41c;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+}
+
+.button-div .deleteAll:hover {
+  background-color: #8a863f;
+}
+/*# sourceMappingURL=style.css.map */
